@@ -10,7 +10,10 @@ document.addEventListener("click",function (e){
 
    document.querySelector('#button').addEventListener('click', () => {
   var xhttp=new XMLHttpRequest;
-  xhttp.open("GET","data.json", true);
+
+  //Working well on live server but giving  cors error otherwise
+//   xhttp.open("GET","data.json", true);
+xhttp.open("GET","https://mocki.io/v1/b41d8db0-d525-4cbf-87ee-4ce65a615632", true);
 
 xhttp.onreadystatechange=function(){
     if(this.readyState == 4 && this.status == 200){
