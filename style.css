@@ -47,10 +47,15 @@ h1{
 
 
   /* Media query */
+  
+  /* For mobile phone  */
   [class*="col-"] {
     width: 100%;
   }
   
+
+
+/* For tablet */
   @media only screen and (min-width: 600px) {
     
     .col-s-1 {width: 8.33%;}
@@ -67,6 +72,10 @@ h1{
     .col-s-12 {width: 100%;}
   }
   
+
+/* For phone */
+
+
   @media only screen and (min-width: 768px) {
     
     .col-1 {width: 8.33%;}
